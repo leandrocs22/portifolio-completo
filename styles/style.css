@@ -181,7 +181,6 @@ body {
         font-size: 1.2rem;         /* evita estouro do botão */
         box-sizing: border-box;    /* evita estourar borda */
     }
-}
     .cabecalho__menu {
         justify-content: center;
         gap: 20px;          /* reduz o espaço entre links */
@@ -235,4 +234,4 @@ body {
         order: 1;
         padding: 0 10px;
     }
-
+}
