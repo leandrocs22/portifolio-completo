@@ -234,4 +234,25 @@ body {
         order: 1;
         padding: 0 10px;
     }
+    .rodape {
+        white-space: normal;   /* permite quebrar linha */
+        flex-direction: column; /* coloca elementos um abaixo do outro */
+        gap: 8px;               /* espaço bonito entre as linhas */
+        text-align: center;     /* mantém alinhado */
+    }
+
+    .email-container {
+        white-space: nowrap; /* impede quebra DO E-MAIL, mas não do bloco */
+    }
+    .rodape {
+        white-space: normal;   /* permite quebrar linha */
+        flex-direction: column; /* coloca elementos um abaixo do outro */
+        gap: 8px;               /* espaço bonito entre as linhas */
+        text-align: center;     /* mantém alinhado */
+    }
+
+    .email-container {
+        white-space: nowrap; /* impede quebra DO E-MAIL, mas não do bloco */
+    }
 }
+
