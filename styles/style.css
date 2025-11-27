@@ -157,6 +157,10 @@ body {
     display: flex;               /* coloca ícone + email lado a lado */
     align-items: center;         /* centraliza verticalmente */
     gap: 6px;                    /* espaço entre ícone e texto */
+    max-width: 100%;
+    overflow: hidden;          /* impede quebra */
+    text-overflow: ellipsis;   /* adiciona ... */
+    white-space: nowrap;       /* mantém ícone + texto juntos */
 }
 
 .rodape .icone-email {
@@ -235,24 +239,19 @@ body {
         padding: 0 10px;
     }
     .rodape {
-        white-space: normal;   /* permite quebrar linha */
-        flex-direction: column; /* coloca elementos um abaixo do outro */
-        gap: 8px;               /* espaço bonito entre as linhas */
-        text-align: center;     /* mantém alinhado */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        padding: 16px;
+        font-size: smaller;
     }
 
     .email-container {
-        white-space: nowrap; /* impede quebra DO E-MAIL, mas não do bloco */
-    }
-    .rodape {
-        white-space: normal;   /* permite quebrar linha */
-        flex-direction: column; /* coloca elementos um abaixo do outro */
-        gap: 8px;               /* espaço bonito entre as linhas */
-        text-align: center;     /* mantém alinhado */
-    }
-
-    .email-container {
-        white-space: nowrap; /* impede quebra DO E-MAIL, mas não do bloco */
+        justify-content: center;   /* centraliza horizontalmente */
+        text-align: center;
+        width: 100%;
     }
 }
+
 
