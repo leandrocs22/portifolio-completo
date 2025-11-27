@@ -180,8 +180,8 @@ body {
     .apresentacao__imagem_curriculo {
         order: -1;         /* move imagem para o topo dentro da seção */
         position: static;  /* remove sticky */
-        width: 100%;         /* ocupa largura total */
-        max-width: 500px;    /* controla limite em celulares grandes */
+        width: 85%;          /* antes era 70% */
+        max-width: 420px;    /* antes era 350px */
         transform: none;
         margin: 20px auto 0;
         display: block;
