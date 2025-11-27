@@ -160,6 +160,9 @@ body {
         justify-content: center;
         gap: 20px;          /* reduz o espaço entre links */
         white-space: nowrap; /* impede quebra de linha */
+    }
+
+    .cabecalho__menu__link {
         border: 2px solid var(--cor-terciaria);
         border-radius: 8px;
     }
