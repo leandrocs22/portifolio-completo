@@ -158,10 +158,8 @@ body {
 
     .cabecalho__menu {
         justify-content: center;
-        gap: 40px;        /* <-- reduz o gap para mobile */
-        flex-wrap: wrap;  /* <-- evita quebrar o layout */
-        width: 100%;
-        text-align: center;
+        gap: 20px;          /* reduz o espaço entre links */
+        white-space: nowrap; /* impede quebra de linha */
     }
 
     /* layout vertical no mobile */
