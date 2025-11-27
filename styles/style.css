@@ -161,7 +161,7 @@ body {
     /* layout vertical no mobile */
     .apresentacao {
         flex-direction: column;  /* imagem primeiro, depois texto */
-        padding: 5%;
+        padding: 5% 8%;
         text-align: center;
         align-items: center;
     }
@@ -182,6 +182,7 @@ body {
     .apresentacao__conteudo {
         width: 100%;
         order: 1;
+        padding: 0 10px;
     }
 }
 
