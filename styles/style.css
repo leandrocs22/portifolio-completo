@@ -23,6 +23,7 @@ body {
 
 .cabecalho {
     padding: 2% 0% 0% 15%;
+    margin: auto;
 }
 
 .cabecalho__menu {
@@ -148,7 +149,7 @@ body {
 }
 
 @media (max-width: 1200px) {
-   
+
     .cabecalho {
         padding: 10%;
     }
@@ -157,16 +158,30 @@ body {
         justify-content: center;
     }
 
+    /* layout vertical no mobile */
     .apresentacao {
-        flex-direction: column-reverse;
-        padding: 5% 
+        flex-direction: column;  /* imagem primeiro, depois texto */
+        padding: 5%;
+        text-align: center;
+        align-items: center;
     }
 
+    /* IMAGEM VEM APÓS O MENU, ANTES DO TEXTO */
+    .apresentacao__imagem,
+    .apresentacao__imagem_curriculo {
+        order: -1;         /* move imagem para o topo dentro da seção */
+        position: static;  /* remove sticky */
+        width: 70%;
+        max-width: 350px;
+        transform: none;
+        margin: 20px auto 0;
+        display: block;
+    }
+
+    /* texto ocupa largura total */
     .apresentacao__conteudo {
-        width: auto;
+        width: 100%;
+        order: 1;
     }
-
-
-
 }
 
