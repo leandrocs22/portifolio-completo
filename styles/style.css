@@ -142,14 +142,26 @@ body {
     padding: 24px;
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
-    text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
+    font-size: medium;
     font-weight: 400;
+    white-space: nowrap;
+
+    display: flex;               /* alinha em linha */
+    justify-content: center;     /* centraliza tudo */
+    align-items: center;         /* alinha verticalmente */
+    gap: 12px;                   /* espaço entre o texto e o bloco do email */
 }
+
+.email-container {
+    display: flex;               /* coloca ícone + email lado a lado */
+    align-items: center;         /* centraliza verticalmente */
+    gap: 6px;                    /* espaço entre ícone e texto */
+}
+
 .rodape .icone-email {
-    width: 24px;
-    height: 24px;
+    width: 15px;
+    height: 15px;
 }
 
 @media (max-width: 1200px) {
