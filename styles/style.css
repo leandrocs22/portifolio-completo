@@ -151,8 +151,10 @@ body {
 @media (max-width: 1200px) {
 
     .cabecalho {
-        padding: 10%;
+        padding: 5% 8%;   /* <-- adiciona espaço seguro nas laterais */
+        margin: 0 auto;
     }
+
 
     .cabecalho__menu {
         justify-content: center;
