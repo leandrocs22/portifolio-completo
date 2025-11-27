@@ -159,7 +159,17 @@ body {
         margin: 0 auto;
     }
 
-
+    .apresentacao__links__navegacao {
+        width: 100%;               /* antes era 50% */
+        max-width: 350px;          /* mantém bonito */
+        flex-wrap: nowrap;         /* impede quebra da linha */
+        white-space: nowrap;       /* impede quebra do texto por completo */
+        padding: 16px 0;           /* mais confortável no mobile */
+        gap: 12px;                 /* reduz gap do ícone */
+        font-size: 1.2rem;         /* evita estouro do botão */
+        box-sizing: border-box;    /* evita estourar borda */
+    }
+}
     .cabecalho__menu {
         justify-content: center;
         gap: 20px;          /* reduz o espaço entre links */
