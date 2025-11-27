@@ -167,14 +167,12 @@ body {
         border-radius: 8px;
     }
 
-        /* TEXTO */
-    .apresentacao__conteudo {
+   .apresentacao__conteudo {
         width: 100%;
         padding: 0;
-        text-align: center;
-        gap: 24px;
+        text-align: left;       /* CORRETO */
+        align-items: flex-start;
     }
-
     .apresentacao__conteudo__titulo {
         font-size: 1.8rem;
     }
@@ -184,13 +182,14 @@ body {
         line-height: 1.6;
     }
 
-    /* layout vertical no mobile */
-    .apresentacao {
-        flex-direction: column;  /* imagem primeiro, depois texto */
+      .apresentacao {
+        flex-direction: column;
         padding: 5% 8%;
-        text-align: center;
-        align-items: center;
+        text-align: left;       /* CORRETO */
+        gap: 40px;
+        align-items: flex-start; /* IMPORTANTE */
     }
+
 
     /* IMAGEM VEM APÓS O MENU, ANTES DO TEXTO */
     .apresentacao__imagem,
