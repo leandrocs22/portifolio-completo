@@ -1,0 +1,12 @@
+[submodule "portifolio"]
+	path = portifolio
+	url = https://github.com/leandrocs22/portifolio-completo.git
+[submodule "src/portfolio"]
+	path = src/portfolio
+	url = https://github.com/leandrocs22/portifolio-completo.git
+[submodule "src/portfolio-completo"]
+	path = src/portfolio-completo
+	url = https://github.com/leandrocs22/portifolio-completo.git
+[submodule "portifolio-completo"]
+	path = portifolio-completo
+	url = https://github.com/leandrocs22/portifolio-completo.git
