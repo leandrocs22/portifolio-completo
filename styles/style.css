@@ -151,11 +151,15 @@ body {
 @media (max-width: 1200px) {
 
     .cabecalho {
-        padding: 10% 10%;
+        padding: 10%;
     }
 
     .cabecalho__menu {
         justify-content: center;
+        gap: 40px;        /* <-- reduz o gap para mobile */
+        flex-wrap: wrap;  /* <-- evita quebrar o layout */
+        width: 100%;
+        text-align: center;
     }
 
     /* layout vertical no mobile */
